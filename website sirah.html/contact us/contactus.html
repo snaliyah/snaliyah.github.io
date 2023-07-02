@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="'en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <a href="../home page/homepage.html" class="logo">Logo</a>
+        <ul>
+          <li><a href="../home page/homepage.html" class="active">Home</a></li>
+          <li><a href="../about us/aboutus.html">About Us</a></li>
+          <li><a href="../quiz/quiz.html">Games</a></li>
+          <li><a href="../contact us/contactus.html">Contact Us</a></li> 
+        </ul>
+    </header>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm">
+            <h1>Contact Us</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email">
+            <small class="error"></small>
+
+            <label for="">Feedback:</label>
+            <textarea id="feedback" placeholder="Your feedback" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="submit">
+                <p id="success"></p>
+
+        </form>
+    </div>
+
+    <script src="contactus.js"></script>
+</body>
+</html>
